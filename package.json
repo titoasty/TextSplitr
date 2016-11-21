@@ -1,0 +1,18 @@
+{
+  "name": "textsplitr",
+  "version": "0.1.0",
+  "description": "split text, free simple equivalent of greensock SplitText",
+  "main": "index.js",
+  "scripts": {
+    "build": "uglifyjs index.js --compress --mangle --wrap TextSplitr -o textsplitr.min.js --preamble '// https://github.com/titoasty/textsplitr'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "text",
+    "split",
+    "splittext",
+    "textsplitr"
+  ],
+  "author": "Nicolas Bouvet <bouvet.nicolas@gmail.com> (http://www.nico-boo.com)",
+  "license": "ISC"
+}
