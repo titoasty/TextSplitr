@@ -1,5 +1,6 @@
 # TextSplitr
 split text, free simple equivalent of greensock SplitText
+nested `<span>` tags are kept after split.
 
 ## install
 

@@ -2,14 +2,17 @@ function TextSplitr(elt, options) {
 	this.chars = [];
 	this.words = [];
 	this.options = options;
-/*	this.options = Object.assign({}, {
+	this.options = {
 		type: 'chars'
-	}, options);*/
-
+	};
+	if(options) {
+		for (var attrname in options) { this.options[attrname] = options[attrname]; }
+	}
+	
 	var html = elt.innerHTML;
-
-	var typeChars = options.type.indexOf('chars') >= 0;
-	var typeWords = options.type.indexOf('words') >= 0;
+	
+	var typeChars = this.options.type.indexOf('chars') >= 0;
+	var typeWords = this.options.type.indexOf('words') >= 0;
 
 	var tags = [];
 	var found = html.match(/<span[^>]*>(.*?)<\/span>/g);
