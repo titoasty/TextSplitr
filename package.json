@@ -1,6 +1,6 @@
 {
   "name": "textsplitr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "split text, free simple equivalent of greensock SplitText",
   "main": "index.js",
   "scripts": {
